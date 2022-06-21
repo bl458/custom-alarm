@@ -1,10 +1,17 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [sidebar, setSidebar] = useState(false);
+  const changeSidebar = () => {
+    setSidebar(!sidebar);
+  };
+
   return (
-    <div className="App">
-      <p>hi</p>
-    </div>
+    <>
+      <nav className={sidebar ? "sidebar active" : "sidebar"}></nav>
+      <div className="sidebar_close" onClick={changeSidebar} />
+    </>
   );
 }
 

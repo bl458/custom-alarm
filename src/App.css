@@ -1,0 +1,22 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+}
+
+.sidebar.active {
+  right: 0;
+  transition: 850ms;
+}
+
+.sidebar_close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
