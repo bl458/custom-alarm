@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-      <nav className={sidebar ? "sidebar active" : "sidebar"}></nav>
       <div className="sidebar_close" onClick={changeSidebar} />
+      <nav className={sidebar ? "sidebar active" : "sidebar"}></nav>
     </>
   );
 }
